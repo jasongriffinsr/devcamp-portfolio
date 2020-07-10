@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_generator
+    GriffinViewTool::Renderer.copyright 'Jason Griffin', 'All rights reserved'
+  end
 end
