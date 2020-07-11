@@ -3,9 +3,11 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-require("jquery").start()
-require("jquery/ujs").start()
+
+@import "bootstrap/scss/bootstrap";
+require("jquery3").start()
 require("bootstrap-sprockets").start
+require("jquery/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
