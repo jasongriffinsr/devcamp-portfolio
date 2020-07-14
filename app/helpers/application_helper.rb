@@ -9,6 +9,10 @@ module ApplicationHelper
     end
   end
 
+  def portfolio_user_name
+    @portfolio_user_name = 'Jason Griffin Sr.'
+  end
+
   def source_helper(layout_name)
   	if session[:source]
   		greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
@@ -17,7 +21,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    GriffinViewTool::Renderer.copyright 'Jason Griffin', 'All rights reserved'
+    GriffinViewTool::Renderer.copyright @portfolio_user_name, 'All rights reserved'
   end
 
   def nav_items
