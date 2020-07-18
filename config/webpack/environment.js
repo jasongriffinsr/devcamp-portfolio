@@ -15,5 +15,5 @@ const aliasConfig = {
  
 environment.config.set('resolve.alias', aliasConfig)
  
-environment.loaders.prepend('coffee', coffee)
+environment.loaders.append('coffee', coffee)
 module.exports = environment

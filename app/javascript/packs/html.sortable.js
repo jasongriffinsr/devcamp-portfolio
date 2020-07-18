@@ -6,11 +6,9 @@
  *
  * Released under the MIT license.
  */
-
-// alert("Hey there");
 var sortable = (function () {
   'use strict';
-
+//    alert("I'm in")
   /**
    * Get or set data on element
    * @param {HTMLElement} element
@@ -1247,7 +1245,6 @@ var sortable = (function () {
       _removeItemData: _removeItemData,
       _removeSortableData: _removeSortableData
   };
-
   return sortable;
 
 }());

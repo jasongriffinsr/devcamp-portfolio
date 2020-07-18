@@ -1,0 +1,2 @@
+class GriffinCc < ApplicationRecord
+end
