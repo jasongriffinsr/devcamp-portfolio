@@ -1,0 +1,9 @@
+<%= video_tag(
+    'HardDrivePhotojpeg.mp4',
+    id: 'background',
+    autoplay: true,
+    loop: true,
+    muted: false,
+    poster: 'photo-1585079542156-2755d9c8a094.jpeg'
+ )
+%>

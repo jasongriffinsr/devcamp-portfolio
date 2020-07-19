@@ -11,7 +11,7 @@ class PortfoliosController < ApplicationController
     params[:order].each do |key, value|
       Portfolio.find(value[:id]).update(position: value[:position])
     end
-      render nothing: true
+      head :ok
   end
 
   def angular
@@ -66,7 +66,10 @@ def destroy
     def portfolio_params
       params.require(:portfolio).permit(:title, 
                                         :subtitle, 
-                                        :body, technologies_attributes: [:name]
+                                        :body, 
+                                        :main_image,
+                                        :thumb_image,
+                                        technologies_attributes: [:name]
                                         )
     end
 
