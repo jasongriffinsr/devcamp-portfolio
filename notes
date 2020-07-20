@@ -7,3 +7,5 @@
     poster: 'photo-1585079542156-2755d9c8a094.jpeg'
  )
 %>
+
+User.last.update!(roles: "site_admin")

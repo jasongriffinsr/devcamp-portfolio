@@ -20,6 +20,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("packs/html.sortable.js")
 require("packs/portfolios.coffee")
+import 'cocoon-js'
 
 
 
